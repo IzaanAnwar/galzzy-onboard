@@ -9,6 +9,8 @@
     "lint": "eslint . --ext .ts,.tsx -c .eslintrc.json --fix"
   },
   "dependencies": {
+    "@neondatabase/serverless": "^0.9.4",
+    "@next/env": "^14.2.4",
     "@nextui-org/button": "2.0.34",
     "@nextui-org/card": "^2.0.31",
     "@nextui-org/code": "2.0.29",
@@ -23,13 +25,20 @@
     "@nextui-org/theme": "2.2.5",
     "@react-aria/ssr": "3.9.4",
     "@react-aria/visually-hidden": "3.8.12",
+    "@react-email/components": "^0.0.20",
     "clsx": "2.1.1",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.31.2",
     "framer-motion": "~11.1.9",
     "intl-messageformat": "^10.5.14",
     "next": "14.2.4",
     "next-themes": "^0.2.1",
+    "pg": "^8.12.0",
     "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "react-dom": "18.3.1",
+    "resend": "^3.4.0",
+    "sonner": "^1.5.0",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@types/node": "20.5.7",
@@ -38,6 +47,7 @@
     "@typescript-eslint/eslint-plugin": "7.2.0",
     "@typescript-eslint/parser": "7.2.0",
     "autoprefixer": "10.4.19",
+    "drizzle-kit": "^0.22.8",
     "eslint": "^8.57.0",
     "eslint-config-next": "14.2.1",
     "eslint-config-prettier": "^9.1.0",
