@@ -11,14 +11,13 @@ import { saveEmail } from "@/services/actions";
 export function SignupForm() {
   const [state, action] = useFormState(saveEmail, {
     status: 200,
-    message: "",
+    message: null,
   });
 
   if (state.status === 500) {
     toast.error(JSON.stringify(state?.message));
     state.status = 200;
   }
-  console.log({ err: state.message });
 
   if (state.status === 201) {
     toast.success("Yay! you are now part of the team");
@@ -37,7 +36,6 @@ export function SignupForm() {
           type="email"
         />
         <Submit>Sign up</Submit>
-        <p>{state.status === 500 ? "Something" : "Nothing"}</p>
       </form>
       <p className="text-xs">
         Sign up to get notified when we launch.

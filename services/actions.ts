@@ -30,7 +30,7 @@ export async function saveEmail(prevState: any, formData: FormData) {
     const { error } = await resend.emails.send({
       from: process.env.MY_EMAIL!,
       to: [body.email],
-      subject: "Welcome to Galzzy!",
+      subject: "Thank You for Joining Us at Galzzy!",
       react: EmailTemplate(),
     });
 

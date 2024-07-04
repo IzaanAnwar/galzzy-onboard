@@ -5,27 +5,15 @@ import {
   NavbarMenuToggle,
   NavbarBrand,
   NavbarItem,
-  NavbarMenuItem,
 } from "@nextui-org/navbar";
-import { Button } from "@nextui-org/button";
 import { Kbd } from "@nextui-org/kbd";
 import { Link } from "@nextui-org/link";
 import { Input } from "@nextui-org/input";
-import { link as linkStyles } from "@nextui-org/theme";
-import NextLink from "next/link";
-import clsx from "clsx";
 
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
-import {
-  TwitterIcon,
-  GithubIcon,
-  DiscordIcon,
-  HeartFilledIcon,
-  SearchIcon,
-  Logo,
-} from "@/components/icons";
-import { VideoConsoleIcon } from "./assets";
+import { TwitterIcon, SearchIcon, GalzzyLogo } from "@/components/icons";
+import Image from "next/image";
 
 export const Navbar = () => {
   const searchInput = (
@@ -52,12 +40,12 @@ export const Navbar = () => {
   return (
     <NextUINavbar maxWidth="xl" position="sticky">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
-      <NavbarBrand>
-        <div className="flex w-full items-center justify-start gap-2 text-left">
-          <VideoConsoleIcon className="text-primary" />
-          <h1 className="text-xl font-bold text-primary">GALZZY</h1>
-        </div>
-      </NavbarBrand>
+        <NavbarBrand>
+          <div className="flex w-full items-center justify-start gap-2 text-left ">
+            <Image alt="Logo" height={32} src={"/galzzy_logo.svg"} width={32} />
+            <h1 className="text-xl font-bold text-foreground">GALZZY</h1>
+          </div>
+        </NavbarBrand>
       </NavbarContent>
       <NavbarContent className="hidden gap-4 sm:flex" justify="center">
         <NavbarItem>
@@ -71,7 +59,6 @@ export const Navbar = () => {
           </Link>
         </NavbarItem>
       </NavbarContent>
-     
 
       <NavbarContent
         className="hidden sm:flex basis-1/5 sm:basis-full"
@@ -81,23 +68,18 @@ export const Navbar = () => {
           <Link isExternal aria-label="Twitter" href={siteConfig.links.twitter}>
             <TwitterIcon className="text-default-500" />
           </Link>
-          
+
           <ThemeSwitch />
         </NavbarItem>
         <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
-        
       </NavbarContent>
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-      
         <ThemeSwitch />
         <NavbarMenuToggle />
       </NavbarContent>
 
-      <NavbarMenu>
-        {searchInput}
-       
-      </NavbarMenu>
+      <NavbarMenu>{searchInput}</NavbarMenu>
     </NextUINavbar>
   );
 };

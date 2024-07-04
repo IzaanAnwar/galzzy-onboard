@@ -65,16 +65,15 @@ export default function Page() {
                 </p>
               </Card>
               <Card className="grid gap-1 border border-background bg-background p-4 shadow-none duration-300 hover:border-primary">
-                <h3 className="text-lg font-bold">Fast Processing</h3>
+                <h3 className="text-lg font-bold">Real-Time Notifications</h3>
                 <p className="text-sm">
-                  Our powerful servers quickly process your videos, ensuring
-                  your content is available to share right away.
+                  Stay informed with instant updates on your video projects.
                 </p>
               </Card>
               <Card className="grid gap-1 border border-background bg-background p-4 shadow-none duration-300 hover:border-primary">
                 <h3 className="text-lg font-bold">Secure Storage</h3>
                 <p className="text-sm">
-                  Your videos are stored securely in our cloud, protected by
+                  Rest easy knowing your videos are safeguarded with
                   industry-leading encryption and backup systems.
                 </p>
               </Card>
