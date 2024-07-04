@@ -14,7 +14,7 @@ const EmailTemplate = () => (
     <Head />
     <Body className="light bg-background text-foreground p-6">
       <Container className="bg-content1 rounded-lg p-6 border-2 border-content2">
-        <Heading className="text-primary-DEFAULT mb-4">
+        <Heading className="text-primary mb-4">
           Welcome to Galzzy! Exciting Times Ahead!
         </Heading>
         <Text className="text-foreground mb-2">Hi there,</Text>
@@ -28,7 +28,7 @@ const EmailTemplate = () => (
           my personal email.
         </Text>
         <Button
-          className="bg-primary-DEFAULT text-primary-foreground py-2 px-4 rounded-md mt-4"
+          className="bg-primary text-primary-foreground py-2 px-4 rounded-md mt-4"
           href="mailto:mdizaan67@gmail.com"
         >
           Contact Me
