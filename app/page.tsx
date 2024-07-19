@@ -18,9 +18,9 @@ export default function Page() {
                   Seamlessly Upload and Collaborate on YouTube Videos
                 </h1>
                 <p className="mx-auto max-w-[700px] md:text-xl">
-                  Your all-in-one YouTube workflow tool. Drag-and-drop uploads
-                  and real-time collaboration streamline your content creation
-                  from start to finish.
+                  Your all-in-one YouTube workflow tool. Effortlessly
+                  drag-and-drop uploads and simplify your content creation
+                  process from start to finish.
                 </p>
                 <div className="mt-6 space-x-4">
                   <Button className="text-primary-foreground" color="primary">
