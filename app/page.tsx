@@ -15,11 +15,12 @@ export default function Page() {
             <div className="mx-auto grid max-w-[1300px] gap-4 px-4 sm:px-6 md:grid-cols-2 md:gap-16 md:px-10">
               <div className="space-y-6">
                 <h1 className="text-3xl font-bold sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.4rem]">
-                  Enhance Your Workflow with Seamless Uploads
+                  Seamlessly Upload and Collaborate on YouTube Videos
                 </h1>
                 <p className="mx-auto max-w-[700px] md:text-xl">
-                  Galzzy is the ultimate YouTube workflow companion. Seamlessly
-                  upload and collaborate for maximum impact.
+                  Your all-in-one YouTube workflow tool. Drag-and-drop uploads
+                  and real-time collaboration streamline your content creation
+                  from start to finish.
                 </p>
                 <div className="mt-6 space-x-4">
                   <Button className="text-primary-foreground" color="primary">
@@ -118,11 +119,10 @@ export default function Page() {
                   Pricing
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Affordable Plans for Every Need
+                  We have got Plans for Every Need
                 </h2>
                 <p className="max-w-[900px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Choose the plan that best fits your video hosting and sharing
-                  requirements.
+                  Choose the plan that best fits your work routine and scale.
                 </p>
               </div>
             </div>
